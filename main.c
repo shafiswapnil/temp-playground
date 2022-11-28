@@ -3,18 +3,16 @@
 
 int main()
 {
-    int time;
-    int process, hour, minute, second;
+    int money;
+    scanf("%d", &money);
 
-    printf("enter time: \n");
-    scanf("%d", &time);
+    printf("%d note of 500 \n", money / 500);
+    money = money % 500;
 
-    process = time / 60;
-    hour = process / 60;
-    minute = process % 60;
-    second = time % 60;
+    printf("%d notes of 100 \n", money / 100);
+    money = money % 100;
 
-    printf("%d hour %d minute %d second\n", hour, minute, second);
+    printf("%d notes of 5 \n", money/5);
 
     return 0;
 }
