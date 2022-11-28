@@ -3,16 +3,16 @@
 
 int main()
 {
-    int u, a, t;
-    int s;
+    int height;
+    int meter, centimeter;
 
-    printf("u a t? \n");
-    scanf("%d %d %d", &u, &a, &t);
+    printf("enter height (in cm): \n");
+    scanf("%d", &height);
 
-    // equation : s = u*t + (0.5*a*(t*t))
-    s = u*t + 0.5*a*t*t;
+    meter = height/100;
+    centimeter = height % 100;
 
-    printf("s = %d", s);
+    printf("Height = %d meter %d centimeter\n", meter, centimeter);
 
     return 0;
 }
