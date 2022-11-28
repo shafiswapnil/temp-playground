@@ -3,16 +3,16 @@
 
 int main()
 {
-    int a;
-    float b;
+    int u, a, t;
+    int s;
 
-    printf("enter integer: \n");
-    scanf("%d", &a);
+    printf("u a t? \n");
+    scanf("%d %d %d", &u, &a, &t);
 
-    printf("enter float: \n");
-    scanf("%f", &b);
+    // equation : s = u*t + (0.5*a*(t*t))
+    s = u*t + 0.5*a*t*t;
 
-    printf("%d %.2f", a, b);
+    printf("s = %d", s);
 
     return 0;
 }
