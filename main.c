@@ -3,6 +3,16 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    int a;
+    float b;
+
+    printf("enter integer: \n");
+    scanf("%d", &a);
+
+    printf("enter float: \n");
+    scanf("%f", &b);
+
+    printf("%d %.2f", a, b);
+
     return 0;
 }
