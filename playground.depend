@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1669621315 source:e:\sandbox\playground\main.c
+1669622687 source:e:\sandbox\playground\main.c
 	<stdio.h>
 	<stdlib.h>
+	<math.h>
 

@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-    int money;
-    scanf("%d", &money);
+    float a;
 
-    printf("%d note of 500 \n", money / 500);
-    money = money % 500;
+    scanf("%f",&a);
 
-    printf("%d notes of 100 \n", money / 100);
-    money = money % 100;
+    float ceilN = ceil(a);
+    float floorN = floor(a);
 
-    printf("%d notes of 5 \n", money/5);
+    printf("ceil = %f floor = %f", ceilN, floorN);
 
     return 0;
 }
