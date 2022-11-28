@@ -4,15 +4,15 @@
 int main()
 {
     int height;
-    int meter, centimeter;
+    int feet, inch;
 
-    printf("enter height (in cm): \n");
+    printf("enter height (inch): \n");
     scanf("%d", &height);
 
-    meter = height/100;
-    centimeter = height % 100;
+    feet = height / 12;
+    inch = height % 12;
 
-    printf("Height = %d meter %d centimeter\n", meter, centimeter);
+    printf("%d feet %d inch\n", feet, inch);
 
     return 0;
 }
