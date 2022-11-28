@@ -3,16 +3,18 @@
 
 int main()
 {
-    int height;
-    int feet, inch;
+    int time;
+    int process, hour, minute, second;
 
-    printf("enter height (inch): \n");
-    scanf("%d", &height);
+    printf("enter time: \n");
+    scanf("%d", &time);
 
-    feet = height / 12;
-    inch = height % 12;
+    process = time / 60;
+    hour = process / 60;
+    minute = process % 60;
+    second = time % 60;
 
-    printf("%d feet %d inch\n", feet, inch);
+    printf("%d hour %d minute %d second\n", hour, minute, second);
 
     return 0;
 }
