@@ -4,14 +4,14 @@
 
 int main()
 {
-    float a;
+    int a;
+    scanf("%d", &a);
 
-    scanf("%f",&a);
-
-    float ceilN = ceil(a);
-    float floorN = floor(a);
-
-    printf("ceil = %f floor = %f", ceilN, floorN);
+    if (a%2==0) {
+        printf("%d is even", a);
+    } else {
+        printf("%d is odd", a);
+    }
 
     return 0;
 }
