@@ -4,24 +4,17 @@
 
 int main()
 {
-    int year;
-    scanf("%d", &year);
+    char ch;
+    scanf("%c", &ch);
 
-    if (year % 100 == 0) {
-        if (year % 400 == 0) {
-            printf("Yes");
-        }
-        else {
-            printf("No");
-        }
+    if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z') {
+        printf("Alphabet");
+    }
+    else if (ch >= '1' && ch <= '9') {
+        printf("Digit");
     }
     else {
-        if (year % 4 == 0) {
-            printf("Yes");
-        }
-        else {
-            printf("No");
-        }
+        printf("Special");
     }
 
     return 0;
