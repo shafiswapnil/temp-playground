@@ -4,17 +4,24 @@
 
 int main()
 {
-    int x, y;
-    scanf("%d %d", &x, &y);
+    int year;
+    scanf("%d", &year);
 
-    if (x > y) {
-        printf("%d is greater than %d", x, y);
+    if (year % 100 == 0) {
+        if (year % 400 == 0) {
+            printf("Yes");
+        }
+        else {
+            printf("No");
+        }
     }
-    else if (x < y) {
-        printf("%d is less than %d", x, y);
-    }
-    else if (x == y) {
-        printf("%d is equal to %d", x, y);
+    else {
+        if (year % 4 == 0) {
+            printf("Yes");
+        }
+        else {
+            printf("No");
+        }
     }
 
     return 0;
