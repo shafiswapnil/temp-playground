@@ -4,22 +4,17 @@
 
 int main()
 {
-    int input;
-    scanf("%d", &input);
+    int x, y;
+    scanf("%d %d", &x, &y);
 
-    if (input > 0) {
-        if (ceil(log2(input)) == floor(log2(input))) {
-            printf("Yes");
-        }
+    if (x > y) {
+        printf("%d is greater than %d", x, y);
     }
-    else if (input == 0) {
-        printf("Zero is not a valid input");
+    else if (x < y) {
+        printf("%d is less than %d", x, y);
     }
-    else if (input < 0) {
-        printf("Negative is not valid input");
-    }
-    else {
-        printf("No");
+    else if (x == y) {
+        printf("%d is equal to %d", x, y);
     }
 
     return 0;
